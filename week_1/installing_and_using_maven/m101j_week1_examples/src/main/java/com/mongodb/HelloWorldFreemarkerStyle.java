@@ -34,7 +34,7 @@ public class HelloWorldFreemarkerStyle {
         try {
             Template helloTemplate = configuration.getTemplate("hello.ftl");
             StringWriter writer = new StringWriter();
-            Map<String, Object> helloMap = new HashMap<String, Object>();
+            Map<String, Object> helloMap = new HashMap<>();
             helloMap.put("name", "Freemarker");
 
             helloTemplate.process(helloMap, writer);

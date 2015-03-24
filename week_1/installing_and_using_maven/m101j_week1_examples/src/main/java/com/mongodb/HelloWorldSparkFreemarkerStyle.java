@@ -41,7 +41,7 @@ public class HelloWorldSparkFreemarkerStyle {
                 StringWriter writer = new StringWriter();
                 try {
                     Template helloTemplate = configuration.getTemplate("hello.ftl");
-                    Map<String, Object> helloMap = new HashMap<String, Object>();
+                    Map<String, Object> helloMap = new HashMap<>();
                     helloMap.put("name", "Freemarker");
 
                     helloTemplate.process(helloMap, writer);
